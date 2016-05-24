@@ -82,15 +82,70 @@ var president = [
 var aPresident= "";
 var presElement = document.getElementById("arrayIteration");
 
-for (var i = 1; i < president.length; i++) {
+for (var i = 0; i < president.length; i++) {
 	aPresident = president[i];
-	console.log("President #" + i + " was " + president[i]);
+	console.log("President #" + (i+1) + " was " + president[i]);
 
 	// for innerHTML practice 
-	presElement.innerHTML += `<div>${"President #" + i + " was " + aPresident}</div>`;
+	presElement.innerHTML += `<div>${"President #" + (i+1) + " was " + aPresident}</div>`;
+}
+
+/********** BEGIN OBJECT Iteration Problem **********/
+var antSpecies = {
+  "argentine": {},
+  "army": {},
+  "big headed": {},
+  "black": {},
+  "bull": {},
+  "carpenter": {},
+  "crazy": {},
+  "fire": {},
+  "glider": {},
+  "honey pot": {},
+  "jack jumper": {}
 }
 
 
-/********** BEGIN OBJECT Iteration Problem **********/
 
 
+
+
+
+
+
+
+
+
+
+// // SIMPLE VERSIONS/Off the dome run throughs of 1, 2, & 3 Exercises
+// console.log("Below are just practice workthroughs I did");
+
+// // Increment by 10
+// var countVar = 5;
+// var increVar = 10;
+// var maxVar = 120;
+// for (var i = countVar; i < maxVar; i+=increVar) {
+// 	console.log("AAAAAAAAAAAAAAAAAAAAAAAAAA= ", i );
+// }
+	
+// // Division by 2
+// var theNum = 4096;
+// for (i = theNum; i >= 1; i/=2) {
+// 	console.log("asdfasdfasdfklasdflkjasd fklj", i );
+// } 
+
+// // Presidents
+// var thePresident = [
+// 	"George Washington",
+// 	"John Adams",
+// 	"Thomas Jefferson",
+// 	"James Madison",
+// 	"James Monroe",
+// 	"John Quincy Adams",
+// 	"Andrew Jackson",
+// 	"Martin Van Buren",
+// 	"William H. Harrison"];
+
+// for (var i = 0; i < thePresident.length; i++) {
+// 	console.log("President number " + (i+1) + " was " + thePresident[i]);
+// }
