@@ -92,20 +92,23 @@ for (var i = 0; i < president.length; i++) {
 
 /********** BEGIN OBJECT Iteration Problem **********/
 var antSpecies = {
-  "argentine": {},
-  "army": {},
-  "big headed": {},
-  "black": {},
-  "bull": {},
-  "carpenter": {},
-  "crazy": {},
-  "fire": {},
-  "glider": {},
-  "honey pot": {},
-  "jack jumper": {}
+  argentine: {},
+  army: {},
+  bigHeaded: {},
+  black: {},
+  bull: {},
+  carpenter: {},
+  crazy: {},
+  fire: {},
+  glider: {},
+  honeyPot: {},
+  jackJumper: {}
 }
 
-
+for ( var i = 0 ; i <= antSpecies ; i++ ) {
+	var aSpecies = antSpecies[i];
+	console.log(aSpecies[i]);
+}
 
 
 
