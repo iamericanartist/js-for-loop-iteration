@@ -90,9 +90,10 @@ for (var i = 0; i < president.length; i++) {
 	presElement.innerHTML += `<div>${"President #" + (i+1) + " was " + aPresident}</div>`;
 }
 
+
 /********** BEGIN OBJECT Iteration Problem **********/
 var antSpecies = {
-  argentine: {},
+  argentEine: {asdf: "asdfasdfasdfasdf"},
   army: {},
   bigHeaded: {},
   black: {},
@@ -105,17 +106,30 @@ var antSpecies = {
   jackJumper: {}
 }
 
-for ( var i = 0 ; i <= antSpecies ; i++ ) {
-	var aSpecies = antSpecies[i];
-	console.log(aSpecies[i]);
+
+var obj = { a:1, 
+						b:2, 
+						c:3
+					};
+    
+for (var ant in antSpecies) {
+  console.log("antSpecies." + ant + " = " + antSpecies[ant]);
 }
+	console.log("Here are my F MY I logs:");
+  console.log(antSpecies);
+  console.log(antSpecies.argentEine);
+  console.log(antSpecies.argentEine.asdf);
+  // more specific as dot notation gets more specific
 
+// Output:
+// "obj.a = 1"
+// "obj.b = 2"
+// "obj.c = 3"
 
-
-
-
-
-
+// for ( var i = 0 ; i <= antSpecies ; i++ ) {
+// 	var aSpecies = antSpecies[i];
+// 	console.log(aSpecies[i]);
+// }
 
 
 
